@@ -78,4 +78,6 @@ What the xdelta changes: the main executable (`main.dol`) gets the nine patches 
 
 ## HD texture pack (optional, separate download)
 
+Download: [https://archive.org/details/pn03-hd-texture-pack](https://archive.org/details/pn03-hd-texture-pack) (`PN03-HD-Texture-Pack-GPN-v1.0.zip`, 1.41 GiB; the SHA-256 is in `SHA256SUMS.txt` next to it).
+
 Upscaled textures for both regions. In Dolphin, put the pack's `GPN` folder under `Load\Textures\` (next to `GameSettings`, so `...\Dolphin Emulator\Load\Textures\GPN\`) and enable **Load Custom Textures** in Graphics → Advanced. The three-letter folder name serves both GPNJ08 and GPNE08; if you keep your own `GPNJ08` or `GPNE08` texture folder there, Dolphin uses that one instead. The pack works the same with the patch files and with the patched ISO.

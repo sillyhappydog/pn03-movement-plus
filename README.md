@@ -4,7 +4,7 @@
 
 The patches run as Dolphin per-game patches (no game files are modified) or as a patched `main.dol` applied with xdelta. The HD texture pack is a separate download.
 
-*Version 0.1, 2026-10-08. The HD texture pack link is not set yet.*
+*Version 0.1, 2026-10-08.*
 
 Package layout: `dolphin/` (one patch file per region for Dolphin), `xdelta/` (binary patches for the disc images), `images/` (controller guide), `source/` (the source package of every patch: build script, tests, per-patch files), `INSTALL.md`, `TUNING.md`, `CREDITS.md`, `CHANGELOG.md`, `LICENSE`.
 
@@ -60,7 +60,7 @@ See [TUNING.md](TUNING.md): the in-game tuning menu (camera sensitivity, jump wi
 
 ## HD texture pack
 
-Separate download: textures extracted from the game discs and upscaled 4×, for both regions (`GPN` folder). TODO — link.
+Separate download: textures extracted from the game discs and upscaled 4×, for both regions (`GPN` folder): [https://archive.org/details/pn03-hd-texture-pack](https://archive.org/details/pn03-hd-texture-pack) (one zip, 1.41 GiB). Installation in [INSTALL.md](INSTALL.md).
 
 ## Credits
 
