@@ -1,0 +1,37 @@
+
+lbz 0,0xFC(31)
+cmpwi 0,3
+bne done
+lwz 0,0x12C(31)
+cmpwi 0,0
+bne done
+lwz 12,-29868(13)
+lwz 12,0x50(12)
+lwz 12,0(12)
+lwz 12,0(12)
+lwz 0,0xE4(31)
+cmpw 0,12
+bne done
+lis 12,32793
+addi 12,12,-14592
+lwz 0,4(12)
+andi. 0,0,1
+beq done
+lfs 1,8(12)
+lfs 2,0x100(31)
+fmuls 2,2,1
+stfs 2,0x100(31)
+stfs 2,16(12)
+lfs 2,0x104(31)
+fmuls 2,2,1
+stfs 2,0x104(31)
+stfs 2,20(12)
+lfs 2,0x108(31)
+fmuls 2,2,1
+stfs 2,0x108(31)
+stfs 2,24(12)
+lwz 11,12(12)
+addi 11,11,1
+stw 11,12(12)
+done:
+lfs 13,0x50(28)

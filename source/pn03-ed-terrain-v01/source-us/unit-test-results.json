@@ -1,0 +1,107 @@
+{
+  "cases": 76,
+  "sample": [
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 0,
+      "do_terrain": 0,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 0,
+      "budget_after": 0
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 0,
+      "do_terrain": 1,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 1,
+      "budget_after": 0
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 1,
+      "do_terrain": 0,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 0,
+      "budget_after": 1
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 1,
+      "do_terrain": 1,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 1,
+      "budget_after": 1
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 2,
+      "do_terrain": 0,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 0,
+      "budget_after": 2
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 2,
+      "do_terrain": 1,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 1,
+      "budget_after": 2
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 120,
+      "do_terrain": 0,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 0,
+      "budget_after": 120
+    },
+    {
+      "owner": "player",
+      "target": "0x0",
+      "budget": 120,
+      "do_terrain": 1,
+      "list": "ok",
+      "root": "ok",
+      "terrain_called": 1,
+      "budget_after": 120
+    }
+  ],
+  "countdown": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

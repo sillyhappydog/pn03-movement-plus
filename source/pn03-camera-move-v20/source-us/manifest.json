@@ -1,0 +1,238 @@
+{
+  "hook": 2148210720,
+  "original": 2171439988,
+  "hook_word": 1208878048,
+  "return_word": 1274145780,
+  "guards": [
+    [
+      2148210716,
+      1207979005
+    ],
+    [
+      2148210724,
+      2148204876
+    ]
+  ],
+  "region": 2149129216,
+  "region_end": 2149141504,
+  "delivery": "OnFrame conditional dword patches",
+  "data_offset": 224,
+  "data_end": 456,
+  "data_words": {
+    "last_camera_yaw": 224,
+    "default_camera_sensitivity": 228,
+    "default_camera_deadzone": 232,
+    "default_move_deadzone_squared": 236,
+    "default_move_stick_sign": 240,
+    "default_move_camera_offset": 244,
+    "pi": 248,
+    "two_pi": 252,
+    "magic_hi": 256,
+    "magic_lo": 260,
+    "minus_pi": 264,
+    "epsilon_squared": 268,
+    "fine_step": 272,
+    "sensitivity_min": 276,
+    "sensitivity_max": 280,
+    "sensitivity_unit": 284,
+    "ten_thousand": 288,
+    "hundred": 292,
+    "half": 296,
+    "default_jump_window": 300,
+    "jump_window_max": 304,
+    "sector_22": 308,
+    "sector_67": 312,
+    "sector_112": 316,
+    "sector_157": 320,
+    "zero": 324,
+    "counter_max": 328,
+    "arc_epsilon": 332,
+    "sector_45": 336,
+    "half_pi": 340,
+    "crouch_sector": 344,
+    "turn_state": 348,
+    "turn_entry_yaw": 352,
+    "turn_delta": 356,
+    "stick_block": 360,
+    "turn_quarter": 364
+  },
+  "line1_offset": 368,
+  "line2_offset": 420,
+  "line3_offset": 401,
+  "sens_slot": 388,
+  "mult_slot": 395,
+  "win_slot": 412,
+  "text": {
+    "x": 16,
+    "y1": 396,
+    "y2": 428,
+    "y3": 412,
+    "line1_prefix": "DEBUG  CAM  SENS  0.",
+    "line1_mid": "  X",
+    "line2": "DPAD=SENS  X=RESET  L+R+Z=EXIT",
+    "line3_prefix": "JUMP  WIN  ",
+    "line3_mid": "  A/B",
+    "line3_suffix": "",
+    "encoding": "ascii",
+    "bytes_per_char": 1,
+    "flags_records_visible": true,
+    "cell_width": 16,
+    "px_widths": [
+      198,
+      108,
+      200
+    ]
+  },
+  "debug_printf": 2148014052,
+  "set_debug_page": 2148014032,
+  "config_block": 2149143232,
+  "config_magic": 1347301428,
+  "config_version": 3,
+  "config_offsets": {
+    "magic": 0,
+    "version": 4,
+    "sensitivity": 8,
+    "camera_deadzone": 12,
+    "deadzone_sq": 16,
+    "sign": 20,
+    "offset": 24,
+    "flags": 28,
+    "jump_window": 32,
+    "push_frames": 36,
+    "pending_jump": 40,
+    "follow_frames": 44,
+    "cam_yaw_request": 48,
+    "pending_focus": 52,
+    "cam_yaw_step": 56
+  },
+  "defaults": {
+    "camera_sensitivity": 0.0036,
+    "camera_deadzone": 10.0,
+    "move_deadzone_squared": 900.0,
+    "move_stick_sign": 1.0,
+    "move_camera_offset": 0.0,
+    "jump_window": 4
+  },
+  "steps": {
+    "coarse": 0.0006,
+    "fine": 0.0001,
+    "minimum": 0.0002,
+    "maximum": 0.05
+  },
+  "jump": {
+    "window_default": 4,
+    "window_max": 30,
+    "counter_max": 1000,
+    "sectors_deg": [
+      22.5,
+      67.5,
+      112.5,
+      157.5
+    ],
+    "kinds": {
+      "0": "neutral",
+      "1": "camera_frame",
+      "2": "running"
+    },
+    "arc_epsilon": 0.02,
+    "hold_flag_bit": 4,
+    "hold_toggle_in_menu": false,
+    "run_passthrough_deg": 45.0,
+    "chord_zone": "pad buttons bit 0x40000 (game DOWN sector, |angle from down| < 70 deg)"
+  },
+  "turn": {
+    "source": "C-stick X byte 0x80199702 on the first frame of sub-state 8",
+    "threshold": 40,
+    "left_bit": 65536,
+    "right_bit": 131072,
+    "movement_stick_bits_cleared": true,
+    "entry": "0x800B29B4 reads 0x80199710: LEFT -> motion +0x64/+0x68 (mirror global), RIGHT -> the other, none -> +0x30 (180)",
+    "quarter_deg": 80.64,
+    "stick_block_frames": 2,
+    "camera_lock_flag_bit": 16,
+    "paced_flag_bit": 32,
+    "camera_request_v19": "entry frame: config +0x30 = wrap(entry yaw + rotation), +0x38 = 0, flags bit3 | bit5; camera v0.11 paces the swing to her per-frame rotation; follow_frames = 1 when stick_block runs out (2 frames after the turn state)",
+    "camera_request": "v0.17: entry frame records her yaw and the rotation (+pi / +pi/2 left / -pi/2 right) in data words; the first later frame with |yaw - entry| > detect writes config +0x30 = wrap(entry + rotation), +0x38 = +-camera step (sign = spin direction) and flags bit3; bit1 is not raised during the turn; follow_frames = 1 when the turn state ends"
+  },
+  "lockon": {
+    "button": "X (control word 0x400, pressed edge)",
+    "target_count": "player+0xDC8 (u16)",
+    "target_index": "player+0xDCA",
+    "current_target": "player+0x5B4",
+    "target_list": "player+0xC48, 12-byte entries (ptr, ?, distance) sorted ascending",
+    "aim_point": "0x8009EFB0(target+0xF0, target+0x125) -> +0x108 (x,y,z); fallback target+0xC0",
+    "hp": "target+0x4D4 > 0",
+    "request": "config +0x30 yaw (atan2f(dx, dz) from Vanessa), flags bit3; camera v0.6 applies once",
+    "no_target": "follow_frames = 1 (camera behind Vanessa)"
+  },
+  "sidestep_swap": {
+    "states": "category 1 sub-states other than 0/1/0xB/0xC (those snap the facing instead)",
+    "rule": "swap op-word bits 0x20000<->0x10000 and 0x8000<->0x4000 when |wrap(facing - camera yaw)| > pi/2",
+    "threshold_word": "half_pi",
+    "facing_untouched": true
+  },
+  "crouch": {
+    "state": "sub-state 5 with Y held (op word 0x40000) and no L/R trigger edge",
+    "rule": "rel = wrap(intended - facing); |rel| < crouch_sector -> UP, |rel| > pi - crouch_sector -> DOWN, else L (rel >= 0) / R trigger bits; raw direction bits cleared; yaw untouched",
+    "sector_word": "crouch_sector",
+    "sector_deg": 45.0,
+    "y_released": "exploration rules"
+  },
+  "follow_flag_bit": 2,
+  "config_lines": {
+    "default_camera_sensitivity": {
+      "payload_offset": 228,
+      "address": 2149129444,
+      "patch_line": "0x80191CE4:dword:0x3B6BEDFA:0x00000000"
+    },
+    "default_move_stick_sign": {
+      "payload_offset": 240,
+      "address": 2149129456,
+      "patch_line": "0x80191CF0:dword:0x3F800000:0x00000000"
+    },
+    "default_move_camera_offset": {
+      "payload_offset": 244,
+      "address": 2149129460,
+      "patch_line": "0x80191CF4:dword:0x00000000:0x00000000"
+    },
+    "fine_step": {
+      "payload_offset": 272,
+      "address": 2149129488,
+      "patch_line": "0x80191D10:dword:0x38D1B717:0x00000000"
+    },
+    "sensitivity_unit": {
+      "payload_offset": 284,
+      "address": 2149129500,
+      "patch_line": "0x80191D1C:dword:0x3A1D4952:0x00000000"
+    },
+    "default_jump_window": {
+      "payload_offset": 300,
+      "address": 2149129516,
+      "patch_line": "0x80191D2C:dword:0x00000004:0x00000000"
+    },
+    "jump_window_max": {
+      "payload_offset": 304,
+      "address": 2149129520,
+      "patch_line": "0x80191D30:dword:0x0000001E:0x00000000"
+    },
+    "half_pi": {
+      "payload_offset": 340,
+      "address": 2149129556,
+      "patch_line": "0x80191D54:dword:0x3FC90FDB:0x00000000"
+    },
+    "crouch_sector": {
+      "payload_offset": 344,
+      "address": 2149129560,
+      "patch_line": "0x80191D58:dword:0x3F490FDB:0x00000000"
+    },
+    "turn_quarter": {
+      "payload_offset": 364,
+      "address": 2149129580,
+      "patch_line": "0x80191D6C:dword:0x3FB426C8:0x00000000"
+    }
+  },
+  "patch_entries": 1038,
+  "bytes": 4148,
+  "sha256": "bc2dbab1dec2c070cdb5ef53657036b58eb3786734c452856977d7a9d6389dc1",
+  "stack_frame": 416
+}

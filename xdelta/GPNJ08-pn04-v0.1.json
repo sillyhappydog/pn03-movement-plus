@@ -1,0 +1,19 @@
+{
+  "game_id": "GPNJ08",
+  "source": "pn03_jp.iso",
+  "source_size": 1459978240,
+  "target": "GPNJ08-pn04-v0.1.iso",
+  "target_size": 1459978240,
+  "dol_offset": "0x1ec00",
+  "old_dol_size": "0x181300",
+  "new_dol_size": "0x186a00",
+  "old_fst_offset": "0x19ff00",
+  "new_fst_offset": "0x1a8000",
+  "fst_size": "0x33b6",
+  "first_file": "0x29cac490",
+  "xdelta": "GPNJ08-pn04-v0.1.xdelta",
+  "xdelta_size": 11197,
+  "patched_dol_sha256": "f84c892fcf9b1a117406362a6b2e4dec43257503fa0b23922c19e21e49a454d5",
+  "copy_seconds": 0.5,
+  "xdelta_seconds": 3.4
+}

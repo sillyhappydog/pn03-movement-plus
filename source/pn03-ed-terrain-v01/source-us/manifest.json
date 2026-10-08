@@ -1,0 +1,21 @@
+{
+  "hook": 2147531080,
+  "original": 738656256,
+  "hook_word": 1209557432,
+  "return_word": 1273470432,
+  "resume": 2147531084,
+  "region": 2149128960,
+  "region_end": 2149129216,
+  "delivery": "OnFrame conditional dword patches",
+  "bytes": 112,
+  "sha256": "f3830ebd4b6dfcd00db075d10d3b49ab3358f7638a3195ff401dd1c180e2653a",
+  "patch_entries": 29,
+  "root_sda_offset": -29836,
+  "owner_offset": 228,
+  "target_offset": 300,
+  "budget_offset": 336,
+  "terrain_raycast": 2147515104,
+  "object_hit_test": 2147531564,
+  "build_region": "US",
+  "game_id": "GPNE08"
+}

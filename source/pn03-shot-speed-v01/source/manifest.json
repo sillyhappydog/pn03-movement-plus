@@ -1,0 +1,23 @@
+{
+  "hook": 2147549376,
+  "original": 3250323536,
+  "hook_word": 1209517376,
+  "return_word": 1273510456,
+  "resume": 2147549380,
+  "region": 2149107200,
+  "params": 2149107456,
+  "param_offsets": {
+    "tag": 0,
+    "flags": 4,
+    "factor": 8,
+    "count": 12,
+    "last_v": 16,
+    "last_class_seen": 28
+  },
+  "factor": 2.5,
+  "vanilla_speed": 1800.0,
+  "bytes": 144,
+  "sha256": "8ea3b5478ab999a01ba48ecdd0a6bed041557170d12399ec8843816ca6f16357",
+  "patch_entries": 40,
+  "delivery": "OnFrame conditional dword patches"
+}

@@ -1,0 +1,19 @@
+{
+  "hook": 2147530696,
+  "original": 738656256,
+  "hook_word": 1209542456,
+  "return_word": 1273485408,
+  "resume": 2147530700,
+  "region": 2149113600,
+  "region_end": 2149113856,
+  "delivery": "OnFrame conditional dword patches",
+  "bytes": 112,
+  "sha256": "5ee10c270d55455371121057cea5f76045ffe91c4b80e41fd6a8933c74450cec",
+  "patch_entries": 29,
+  "root_sda_offset": -29868,
+  "owner_offset": 228,
+  "target_offset": 300,
+  "budget_offset": 336,
+  "terrain_raycast": 2147514720,
+  "object_hit_test": 2147531180
+}

@@ -1,0 +1,19 @@
+{
+  "game_id": "GPNE08",
+  "source": "pn03_usa.iso",
+  "source_size": 1459978240,
+  "target": "GPNE08-pn04-v0.1.iso",
+  "target_size": 1459978240,
+  "dol_offset": "0x1ec00",
+  "old_dol_size": "0x184fc0",
+  "new_dol_size": "0x18a6c0",
+  "old_fst_offset": "0x1a3c00",
+  "new_fst_offset": "0x1b0000",
+  "fst_size": "0x3dfb",
+  "first_file": "0x25604310",
+  "xdelta": "GPNE08-pn04-v0.1.xdelta",
+  "xdelta_size": 11299,
+  "patched_dol_sha256": "143a1f564478474ee78b3251d3c65467265528bc69d7098e87d1e4efc1a9bc00",
+  "copy_seconds": 0.6,
+  "xdelta_seconds": 3.5
+}

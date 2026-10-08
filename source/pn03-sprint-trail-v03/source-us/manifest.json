@@ -1,0 +1,63 @@
+{
+  "hook": 2148211424,
+  "original": 3250520272,
+  "hook_word": 1208874272,
+  "resume": 2148211428,
+  "region": 2149126144,
+  "region_end": 2149127168,
+  "data_offset": 640,
+  "scratch_offset": 704,
+  "params_offset": 768,
+  "delivery": "OnFrame conditional dword patches",
+  "bytes": 572,
+  "data_bytes": 24,
+  "sha256": "46359fdd2a9483dfa4f360f3fb3f69e77dbc7b3f7105b81a02a3503ba5e9a68e",
+  "patch_entries": 150,
+  "marker": 1414679603,
+  "sprint_params": 2149128576,
+  "sprint_marker": 1397772851,
+  "params": {
+    "marker": 2149126912,
+    "flags": 2149126916,
+    "target": 2149126920,
+    "match": 2149126924,
+    "id": 2149126928,
+    "t": 2149126932,
+    "tinted": 2149126936,
+    "dirty": 2149126940,
+    "total": 2149126944,
+    "reserved": 2149126948
+  },
+  "defaults": {
+    "flags": 5,
+    "target": 4287102976,
+    "match": 1348796245,
+    "id": 9
+  },
+  "esp_sys_r13": -29908,
+  "pool_count": 34112,
+  "pool_ptr": 34104,
+  "dummy_elem": 34120,
+  "elem_size": 336,
+  "elem_fields": {
+    "flags": 24,
+    "id": 25,
+    "parent": 36,
+    "colour_bytes": 136,
+    "colour_floats": 140
+  },
+  "effect_record": {
+    "group": 40,
+    "id": 5,
+    "header": 48,
+    "def_size": 300,
+    "defs": 4,
+    "parts": [
+      7,
+      12,
+      22,
+      18
+    ],
+    "esp_id": 9
+  }
+}

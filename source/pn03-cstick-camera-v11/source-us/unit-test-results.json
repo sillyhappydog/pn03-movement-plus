@@ -1,0 +1,22 @@
+{
+  "passed_cases": 8694,
+  "paced_cases": 23,
+  "engine": "Unicorn 2.1.4, PPC32 big endian",
+  "real_dol_math": "C_MTXRotRad at 0x800FC494 plus original sin/cos routines",
+  "loaded_at": "0x80194c00",
+  "delivery_words_checked": true,
+  "swing_step_deg": 30.0,
+  "dir_threshold_deg": 170.0,
+  "step_min_deg": 1.0,
+  "affine_translation_preserved_bitwise": true,
+  "config_block_read_only": true,
+  "follow_request_checked": true,
+  "axis_exclusivity_checked": true,
+  "yaw_request_checked": true,
+  "swing_checked": true,
+  "request_step_checked": true,
+  "camera_lock_checked": true,
+  "paced_swing_checked": true,
+  "paired_single_instructions_skipped": 31,
+  "full_hook_test_in_dolphin_required": true
+}

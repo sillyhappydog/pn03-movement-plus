@@ -1,0 +1,13 @@
+{
+  "passed_cases": 7989,
+  "engine": "Unicorn 2.1.4, PPC32 big endian",
+  "real_dol_math": "atan2f at 0x800DEDB0 and its callees",
+  "stubbed": "DebugPrintf 0x80080178 and SetDebugPage 0x80080164",
+  "loaded_at": "0x80191c00",
+  "delivery_words_checked": true,
+  "paired_single_instructions_skipped": 31,
+  "sidestep_swap_cases": 2254,
+  "crouch_cases": 1024,
+  "turn_request_cases": 49,
+  "full_hook_test_in_dolphin_required": true
+}

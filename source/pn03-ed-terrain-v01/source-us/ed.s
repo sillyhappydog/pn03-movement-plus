@@ -1,0 +1,29 @@
+
+cmpwi 7,0
+beq done
+lwz 0,228(31)
+lwz 9,-29836(13)
+cmpwi 9,0
+beq done
+lwz 9,324(9)
+cmpwi 9,0
+beq done
+lwz 10,0(9)
+lwz 12,4(9)
+subf 12,10,12
+cmpwi 12,0
+beq done
+lwz 9,0(10)
+cmpw 0,9
+bne done
+lwz 0,300(31)
+cmpwi 0,0
+beq done
+lha 9,336(31)
+cmpwi 9,0
+ble done
+addi 9,9,-1
+sth 9,336(31)
+li 7,0
+done:
+cmpwi 7,0

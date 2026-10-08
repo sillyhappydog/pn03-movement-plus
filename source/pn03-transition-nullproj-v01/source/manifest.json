@@ -1,0 +1,25 @@
+{
+  "hook": 2148668228,
+  "original": 2158863744,
+  "hook_word": 1208396988,
+  "return_word": 1274630856,
+  "resume": 2148668232,
+  "region": 2149105664,
+  "region_end": 2149107712,
+  "bytes": 132,
+  "sha256": "e5b6aea1621d955b9abb0e92ed6bf52017c3608dfd11721e590d02cfd6e8aef8",
+  "patch_entries": 34,
+  "delivery": "OnFrame conditional dword patches",
+  "null_projection": {
+    "type": "orthographic (1)",
+    "coefficients": [
+      0,
+      10.0,
+      0,
+      10.0,
+      0,
+      0
+    ],
+    "test": "m00 | m11 | m22 | m23 of the 4x4 argument, sign bit ignored, == 0"
+  }
+}

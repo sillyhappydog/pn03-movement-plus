@@ -1,0 +1,8 @@
+{
+  "cases": 679,
+  "step_min": 1.390625,
+  "step_max": 1.40625,
+  "footstep_events": 52,
+  "sequence_ticks": 214,
+  "v02_warp_ticks": 5
+}

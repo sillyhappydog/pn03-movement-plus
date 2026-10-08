@@ -1,0 +1,72 @@
+{
+  "hooks": {
+    "tracker": [
+      2148211432,
+      4228710400,
+      1208869400,
+      2149121280
+    ],
+    "aim": [
+      2148208080,
+      1208081545,
+      1208873292,
+      2149121820
+    ],
+    "record": [
+      2148208148,
+      738394112,
+      1208873556,
+      2149122152
+    ]
+  },
+  "region": 2149121280,
+  "params": 2149122304,
+  "bytes": 948,
+  "sha256": "02d94e6a6fb3ada2a2e13f9f25d8df6b2fcc43418321a97f0feb6823befbaabf",
+  "patch_entries": 250,
+  "param_offsets": {
+    "tag": 0,
+    "flags": 4,
+    "lead": 8,
+    "max_t": 12,
+    "s_default": 16,
+    "s_meas": 20,
+    "smooth": 24,
+    "max_vel2": 28,
+    "min_vel2": 32,
+    "tgt": 36,
+    "prev": 40,
+    "vel": 52,
+    "valid": 64,
+    "save_f0": 68,
+    "save_f13": 72,
+    "save_lr": 76,
+    "shot": 80,
+    "shot_age": 84,
+    "sprev": 88,
+    "frame": 100,
+    "shots_total": 104,
+    "shots_led": 108,
+    "last_t": 112,
+    "last_d": 116,
+    "pred": 120,
+    "half": 132,
+    "onehalf": 136,
+    "zero": 140,
+    "s_last_d": 144,
+    "max_t_hits": 148,
+    "tgt_tracked": 152
+  },
+  "defaults": {
+    "lead": 1.0,
+    "max_t": 90.0,
+    "s_default": 4500.0,
+    "smooth": 0.5,
+    "max_vel2": 160000.0,
+    "min_vel2": 0.25
+  },
+  "flags": 3,
+  "delivery": "OnFrame conditional dword patches",
+  "node_lookup": 2148142036,
+  "angle_helper": 2148330072
+}
